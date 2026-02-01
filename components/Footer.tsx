@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
@@ -10,9 +9,9 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-8">
               <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
-                <span className="font-black text-xl text-white">B</span>
+                <span className="font-black text-xl text-white">G</span>
               </div>
-              <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Best Grass</span>
+              <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Glass Grass</span>
             </div>
             <p className="text-stone-500 text-lg leading-relaxed mb-8">
               The premier choice for professional, reliable landscaping in Metro City. We turn outdoor dreams into reality.
@@ -33,9 +32,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-black uppercase tracking-widest text-sm text-stone-900 mb-8">Quick Navigation</h4>
             <ul className="space-y-4">
-              {['Home', 'Services', 'Our Story', 'Reviews', 'Portfolio', 'Estimate'].map((link) => (
+              {['Home', 'Services', 'About', 'Reviews', 'Gallery', 'Contact'].map((link) => (
                 <li key={link}>
-                  <a href={`#${link.toLowerCase().replace(' ', '')}`} className="text-stone-500 font-medium hover:text-emerald-600 transition-colors">{link}</a>
+                  <a href={`#${link.toLowerCase()}`} className="text-stone-500 font-medium hover:text-emerald-600 transition-colors">{link}</a>
                 </li>
               ))}
             </ul>
@@ -65,7 +64,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex flex-col">
                 <span className="text-stone-400 text-xs font-bold uppercase tracking-widest mb-1">Write Us</span>
-                <span className="text-stone-600 font-medium">hello@bestgrass.com</span>
+                <span className="text-stone-600 font-medium">hello@glassgrass.com</span>
               </li>
             </ul>
           </div>
@@ -73,7 +72,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-12 border-t border-stone-100 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-stone-400 text-sm font-medium uppercase tracking-widest">
-            © 2024 Best Grass. All Rights Reserved.
+            © 2024 Glass Grass Landscaping. All Rights Reserved.
           </p>
           <div className="flex gap-8 text-stone-400 text-xs font-black uppercase tracking-widest">
             <a href="#" className="hover:text-emerald-600 transition-colors">Privacy</a>

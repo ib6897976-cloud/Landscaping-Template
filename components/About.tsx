@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 
@@ -40,9 +39,8 @@ const About: React.FC = () => {
                 className="w-full h-[650px] object-cover"
               />
             </div>
-            {/* Design Elements */}
-            <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-50 rounded-full -z-1" />
-            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-stone-100 rounded-3xl -rotate-6 -z-1" />
+            <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-50 rounded-full -z-10" />
+            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-stone-100 rounded-3xl -rotate-6 -z-10" />
             <div className="absolute bottom-10 -left-6 bg-emerald-800 p-8 rounded-3xl shadow-2xl z-20 hidden md:block">
               <p className="text-5xl font-black text-white mb-1">10+</p>
               <p className="text-emerald-100 text-xs font-bold uppercase tracking-[0.2em] leading-tight">Years Of<br />Professional<br />Excellence</p>
@@ -57,7 +55,7 @@ const About: React.FC = () => {
             </h2>
             
             <p className="text-stone-600 text-lg leading-relaxed mb-8">
-              Best Grass was built on a simple promise: to treat every yard like it's our own. Our company was founded with a deep commitment to quality and service. We've seen too many companies rush through jobs; we believe in the power of precision and the "above and beyond" approach.
+              Glass Grass was built on a simple promise: to treat every yard like it's our own. Our company was founded with a deep commitment to quality and service. We've seen too many companies rush through jobs; we believe in the power of precision and the "above and beyond" approach.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-10">
@@ -73,7 +71,7 @@ const About: React.FC = () => {
 
             <p className="text-stone-600 italic border-l-4 border-emerald-500 pl-6 mb-10 py-4 bg-stone-50 rounded-r-2xl">
               "We don't just mow lawns. We create environments where families make memories. Professionalism isn't just a word to our team—it's how we show up every single day with top-notch gear and a dedication to detail." 
-              <span className="block mt-2 font-black text-stone-900 not-italic">— The Best Grass Team</span>
+              <span className="block mt-2 font-black text-stone-900 not-italic">— The Glass Grass Team</span>
             </p>
 
             <button 

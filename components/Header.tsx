@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 
@@ -22,7 +21,7 @@ const Header: React.FC = () => {
     }
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // Accounting for sticky header height
+      const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -54,14 +53,13 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('home')}>
             <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${isScrolled ? 'bg-emerald-600' : 'bg-white'}`}>
-              <span className={`font-black text-xl ${isScrolled ? 'text-white' : 'text-emerald-800'}`}>B</span>
+              <span className={`font-black text-xl ${isScrolled ? 'text-white' : 'text-emerald-800'}`}>G</span>
             </div>
             <span className={`text-2xl font-black tracking-tighter uppercase ${isScrolled || isMobileMenuOpen ? 'text-stone-900' : 'text-white'}`}>
-              Best Grass
+              Glass Grass
             </span>
           </div>
 
-          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <button 
@@ -83,7 +81,6 @@ const Header: React.FC = () => {
             </a>
           </nav>
 
-          {/* Mobile Toggle */}
           <button 
             className="lg:hidden p-2 text-emerald-800 outline-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -97,15 +94,14 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-0 left-0 right-0 h-screen bg-white z-40 p-8 flex flex-col animate-in fade-in slide-in-from-top duration-300">
+        <div className="lg:hidden absolute top-0 left-0 right-0 h-screen bg-white z-40 p-8 flex flex-col">
           <div className="flex justify-between items-center mb-12">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
-                <span className="font-black text-xl text-white">B</span>
+                <span className="font-black text-xl text-white">G</span>
               </div>
-              <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Best Grass</span>
+              <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Glass Grass</span>
             </div>
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <X className="w-8 h-8 text-stone-900" />
