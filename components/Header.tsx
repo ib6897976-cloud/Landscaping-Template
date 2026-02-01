@@ -51,11 +51,11 @@ const Header: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('home')}>
-            <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${isScrolled ? 'bg-emerald-600' : 'bg-white'}`}>
+          <div className="flex items-center gap-2 cursor-pointer group" onClick={() => scrollToSection('home')}>
+            <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all group-hover:scale-110 ${isScrolled ? 'bg-emerald-600 shadow-emerald-900/10 shadow-lg' : 'bg-white shadow-xl'}`}>
               <span className={`font-black text-xl ${isScrolled ? 'text-white' : 'text-emerald-800'}`}>G</span>
             </div>
-            <span className={`text-2xl font-black tracking-tighter uppercase ${isScrolled || isMobileMenuOpen ? 'text-stone-900' : 'text-white'}`}>
+            <span className={`text-2xl font-black tracking-tighter uppercase transition-colors ${isScrolled || isMobileMenuOpen ? 'text-stone-900' : 'text-white'}`}>
               Glass Grass
             </span>
           </div>
@@ -65,7 +65,7 @@ const Header: React.FC = () => {
               <button 
                 key={link.name} 
                 onClick={() => scrollToSection(link.id)}
-                className={`text-sm font-bold uppercase tracking-widest transition-colors hover:text-emerald-600 outline-none ${
+                className={`text-sm font-bold uppercase tracking-widest transition-colors hover:text-emerald-500 outline-none ${
                   isScrolled ? 'text-stone-600' : 'text-stone-100'
                 }`}
               >
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             ))}
             <a 
               href="tel:5551234567"
-              className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-transform active:scale-95 shadow-lg shadow-emerald-900/10"
+              className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-emerald-900/10"
             >
               <Phone className="w-4 h-4" />
               (555) 123-4567
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
           </nav>
 
           <button 
-            className="lg:hidden p-2 text-emerald-800 outline-none"
+            className="lg:hidden p-2 outline-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -95,10 +95,10 @@ const Header: React.FC = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-0 left-0 right-0 h-screen bg-white z-40 p-8 flex flex-col">
+        <div className="lg:hidden fixed inset-0 h-screen bg-white z-40 p-8 flex flex-col animate-fade-in">
           <div className="flex justify-between items-center mb-12">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-900/10">
                 <span className="font-black text-xl text-white">G</span>
               </div>
               <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Glass Grass</span>
@@ -112,7 +112,7 @@ const Header: React.FC = () => {
               <button 
                 key={link.name} 
                 onClick={() => scrollToSection(link.id)}
-                className="text-2xl font-black uppercase tracking-tight text-stone-900 border-b border-stone-100 pb-4 text-left outline-none"
+                className="text-2xl font-black uppercase tracking-tight text-stone-900 border-b border-stone-100 pb-4 text-left outline-none hover:text-emerald-600 transition-colors"
               >
                 {link.name}
               </button>
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
           <div className="mt-auto">
              <a 
               href="tel:5551234567"
-              className="flex items-center justify-center gap-3 bg-emerald-600 text-white py-5 rounded-2xl text-xl font-bold shadow-xl shadow-emerald-100"
+              className="flex items-center justify-center gap-3 bg-emerald-600 text-white py-5 rounded-2xl text-xl font-bold shadow-xl shadow-emerald-100 active:scale-95 transition-transform"
             >
               <Phone className="w-6 h-6" />
               Call (555) 123-4567
