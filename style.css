@@ -1,5 +1,26 @@
-/* Custom animations and specific styles not covered by Tailwind utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-stone-50 text-stone-900 font-inter antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-lexend;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest transition-all shadow-xl shadow-emerald-900/10 active:scale-95;
+  }
+}
+
+/* Custom animations and specific styles */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -9,9 +30,8 @@
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-.selection\:bg-emerald-600::selection {
-  background-color: #059669;
-  color: white;
+::selection {
+  @apply bg-emerald-600 text-white;
 }
 
 /* Hide scrollbar but keep functionality */

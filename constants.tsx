@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Leaf, Droplets, Snowflake, Trees, Shovel, Scissors } from 'lucide-react';
 import { Service, Review, Project } from './types';
@@ -52,13 +51,13 @@ export const REVIEWS: Review[] = [
   {
     id: 'r1',
     author: 'Ms. Campbell',
-    content: "The Best Grass team is absolutely top-notch. They turned my wild backyard into a peaceful sanctuary. Above and beyond every time!",
+    content: "The Glass Grass team is absolutely top-notch. They turned my wild backyard into a peaceful sanctuary. Above and beyond every time!",
     rating: 5
   },
   {
     id: 'r2',
     author: 'Charles Phillips',
-    content: "Reliable and professional. Best Grass handles our commercial property and the attention to detail is phenomenal. Highly recommended.",
+    content: "Reliable and professional. Glass Grass handles our commercial property and the attention to detail is phenomenal. Highly recommended.",
     rating: 5
   },
   {
