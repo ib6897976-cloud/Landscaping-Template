@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-8">
               <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
-                <span className="font-black text-xl text-white">G</span>
+                <span className="font-black text-xl text-white">B</span>
               </div>
-              <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Glass Grass</span>
+              <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Best Grass</span>
             </div>
             <p className="text-stone-500 text-lg leading-relaxed mb-8">
               The premier choice for professional, reliable landscaping in Metro City. We turn outdoor dreams into reality.
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex flex-col">
                 <span className="text-stone-400 text-xs font-bold uppercase tracking-widest mb-1">Write Us</span>
-                <span className="text-stone-600 font-medium">hello@glassgrass.com</span>
+                <span className="text-stone-600 font-medium">hello@bestgrass.com</span>
               </li>
             </ul>
           </div>
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-12 border-t border-stone-100 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-stone-400 text-sm font-medium uppercase tracking-widest">
-            © 2024 Glass Grass Landscaping. All Rights Reserved.
+            © 2024 Best Grass Landscaping. All Rights Reserved.
           </p>
           <div className="flex gap-8 text-stone-400 text-xs font-black uppercase tracking-widest">
             <a href="#" className="hover:text-emerald-600 transition-colors">Privacy</a>

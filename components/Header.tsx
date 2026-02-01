@@ -53,10 +53,10 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer group" onClick={() => scrollToSection('home')}>
             <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all group-hover:scale-110 ${isScrolled ? 'bg-emerald-600 shadow-emerald-900/10 shadow-lg' : 'bg-white shadow-xl'}`}>
-              <span className={`font-black text-xl ${isScrolled ? 'text-white' : 'text-emerald-800'}`}>G</span>
+              <span className={`font-black text-xl ${isScrolled ? 'text-white' : 'text-emerald-800'}`}>B</span>
             </div>
             <span className={`text-2xl font-black tracking-tighter uppercase transition-colors ${isScrolled || isMobileMenuOpen ? 'text-stone-900' : 'text-white'}`}>
-              Glass Grass
+              Best Grass
             </span>
           </div>
 
@@ -99,9 +99,9 @@ const Header: React.FC = () => {
           <div className="flex justify-between items-center mb-12">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-900/10">
-                <span className="font-black text-xl text-white">G</span>
+                <span className="font-black text-xl text-white">B</span>
               </div>
-              <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Glass Grass</span>
+              <span className="text-2xl font-black tracking-tighter uppercase text-stone-900">Best Grass</span>
             </div>
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <X className="w-8 h-8 text-stone-900" />

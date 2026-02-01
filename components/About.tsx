@@ -55,7 +55,7 @@ const About: React.FC = () => {
             </h2>
             
             <p className="text-stone-600 text-lg leading-relaxed mb-8">
-              Glass Grass was built on a simple promise: to treat every yard like it's our own. Our company was founded with a deep commitment to quality and service. We've seen too many companies rush through jobs; we believe in the power of precision and the "above and beyond" approach.
+              Best Grass was built on a simple promise: to treat every yard like it's our own. Our company was founded with a deep commitment to quality and service. We've seen too many companies rush through jobs; we believe in the power of precision and the "above and beyond" approach.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-10">
@@ -71,7 +71,7 @@ const About: React.FC = () => {
 
             <p className="text-stone-600 italic border-l-4 border-emerald-500 pl-6 mb-10 py-4 bg-stone-50 rounded-r-2xl">
               "We don't just mow lawns. We create environments where families make memories. Professionalism isn't just a word to our team—it's how we show up every single day with top-notch gear and a dedication to detail." 
-              <span className="block mt-2 font-black text-stone-900 not-italic">— The Glass Grass Team</span>
+              <span className="block mt-2 font-black text-stone-900 not-italic">— The Best Grass Team</span>
             </p>
 
             <button 
